@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אלון ואן גלדר - שותפים לדרך | מכינת קשת יהודה</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Heebo', 'sans-serif'],
+                    },
+                    colors: {
+                        'golan-green': '#4A5D23', // Olive green for Army/Nature vibe
+                        'golan-dark': '#2C3E50',
+                        'golan-earth': '#D4AC0D', // Gold/Wheat tone
+                        'light-bg': '#F9FAFB'
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1463130456064-159d32486c6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')", // Golan landscape feel
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .progress-bar-striped {
+            background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+            background-size: 1rem 1rem;
+        }
+    </style>
+</head>
+<body class="bg-light-bg text-gray-800 font-sans leading-relaxed overflow-x-hidden">
+
+    <!-- Hero Section -->
+    <header class="h-screen min-h-[600px] bg-hero-pattern bg-cover bg-center bg-fixed flex items-center justify-center text-center px-4 relative">
+        <div class="max-w-3xl text-white scroll-reveal visible">
+            <div class="mb-4 inline-block bg-golan-earth text-golan-dark px-4 py-1 rounded-full font-bold text-sm tracking-wide uppercase shadow-lg">
+                קמפיין גיוס המונים - מכינת קשת יהודה
+            </div>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
+                בונים את דור העתיד<br>
+                <span class="text-golan-earth">יחד עם אלון ואן גלדר</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light text-gray-200">
+                הצטרפו אליי למסע של ערכים, מנהיגות ואהבת הארץ במכינה שמגדלת את הלוחמים והמנהיגים של מחר.
+            </p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://charidy.com/KeshetYehuda/88544" target="_blank" class="bg-golan-earth text-golan-dark hover:bg-yellow-500 font-bold py-4 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center gap-2">
+                    <i class="fas fa-heart text-red-600"></i>
+                    לתרומה מאובטחת עכשיו
+                </a>
+            </div>
+            
+            <div class="mt-12 animate-bounce text-white/70">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- The Personal Story Section -->
+    <section class="py-16 md:py-24 px-4 bg-white">
+        <div class="max-w-4xl mx-auto text-center scroll-reveal">
+            <div class="w-24 h-1 bg-golan-green mx-auto mb-8 rounded-full"></div>
+            <h2 class="text-3xl md:text-4xl font-bold text-golan-dark mb-6">היי, כאן אלון</h2>
+            <p class="text-lg md:text-xl text-gray-600 mb-8 leading-8">
+                אני פונה אליכם היום בבקשה אישית. השנה אני זוכה ללמוד ב<strong>מכינת קשת יהודה</strong> ברמת הגולן. 
+                זה המקום שבו אני מעצב את האישיות שלי, מתכונן לשירות צבאי משמעותי, וסופג ערכים שילוו אותי כל החיים.
+                <br><br>
+                המכינה שלנו היא בית ליוזמה, לאחריות ולציונות ללא פשרות. כדי שנוכל להמשיך את המפעל האדיר הזה, כדי שנוכל להמשיך להתאמן, ללמוד ולהתנדב - אנחנו צריכים את השותפות שלכם.
+            </p>
+        </div>
+
+        <!-- Fundraising Goal Visual -->
+        <div class="max-w-2xl mx-auto bg-gray-100 rounded-xl p-6 shadow-inner mt-8 scroll-reveal">
+            <div class="flex justify-between items-end mb-2">
+                <span class="font-bold text-golan-dark">היעד של אלון:</span>
+                <span class="text-2xl font-black text-golan-green">10,000 ₪</span>
+            </div>
+            <div class="w-full bg-gray-300 rounded-full h-6 overflow-hidden">
+                <!-- Change width% to simulate progress or keep empty to encourage start -->
+                <div class="bg-golan-green h-6 rounded-full progress-bar-striped animate-pulse" style="width: 15%"></div>
+            </div>
+            <p class="text-sm text-center text-gray-500 mt-2">כל תרומה, קטנה כגדולה, מקרבת אותנו ליעד!</p>
+        </div>
+    </section>
+
+    <!-- About The Mechina Section -->
+    <section class="py-16 bg-gray-50 relative overflow-hidden">
+        <!-- Decoration BG -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-golan-green opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 scroll-reveal">
+                    <img src="https://images.unsplash.com/photo-1533406263886-2184d4128038?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="נופי הגולן והמכינה" class="rounded-2xl shadow-2xl rotate-2 hover:rotate-0 transition duration-500">
+                </div>
+                <div class="w-full md:w-1/2 scroll-reveal">
+                    <h2 class="text-3xl font-bold text-golan-dark mb-6">על מכינת קשת יהודה</h2>
+                    <p class="text-gray-700 mb-4 text-lg">
+                        מכינת קשת יהודה, הממוקמת במושב קשת בלב הגולן, היא חלוצת המכינות הקדם צבאיות הדתיות (נוסדה ב-1991).
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-golan-earth mt-1 ml-3 text-xl"></i>
+                            <span><strong>תורה ודרך ארץ:</strong> חיבור עמוק לזהות היהודית מתוך שמחה ורוחב אופקים.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-hiking text-golan-earth mt-1 ml-3 text-xl"></i>
+                            <span><strong>הכנה לצה"ל:</strong> הכנה פיזית ומנטלית לשירות משמעותי ביחידות הלוחמות והמובחרות.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-hands-helping text-golan-earth mt-1 ml-3 text-xl"></i>
+                            <span><strong>מנהיגות ואחריות:</strong> פיתוח כושר מנהיגות והתנדבות בקהילה ובחברה הישראלית.</span>
+                        </li>
+                    </ul>
+                    <p class="font-bold text-golan-green">
+                        "להצמיח אנשי אמונה, אוהבי העם והארץ, בעלי כושר מנהיגות ומסירות נפש."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Donate Section -->
+    <section class="py-16 px-4 text-center">
+        <div class="max-w-4xl mx-auto scroll-reveal">
+            <h2 class="text-3xl font-bold text-golan-dark mb-12">למה התרומה שלך חשובה?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-golan-green">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4 text-golan-green text-2xl">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">לימוד והעמקה</h3>
+                    <p class="text-gray-600">התרומה מאפשרת לנו לשמור על בית המדרש חי, תוסס ומלא בספרים ובתוכן איכותי.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-golan-earth">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4 text-golan-earth text-2xl">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">אימונים וציוד</h3>
+                    <p class="text-gray-600">עזרה ברכישת ציוד לאימונים, מסעות ופעילויות שטח שמכינות אותנו לצבא.</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition border-t-4 border-golan-dark">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4 text-golan-dark text-2xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-2">מלגות לחברים</h3>
+                    <p class="text-gray-600">התמיכה שלכם מסייעת לתלמידים שזקוקים לעזרה כלכלית כדי להיות חלק מהמכינה.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="py-20 bg-golan-green relative">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 px-4 scroll-reveal">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">היו שותפים להצלחה שלי ושל חבריי</h2>
+            <p class="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
+                כל סכום מתקבל בברכה ועוזר לנו להגיע ליעד של 10,000 ש"ח.
+                <br>התרומה מוכרת לצרכי מס (סעיף 46).
+            </p>
+            <a href="https://charidy.com/KeshetYehuda/88544" target="_blank" class="bg-white text-golan-green hover:bg-gray-100 font-black py-5 px-10 rounded-full text-xl shadow-2xl transform transition hover:-translate-y-1 inline-block">
+                לחצו כאן לתרומה מאובטחת >>
+            </a>
+            <div class="mt-6 text-white/80 text-sm">
+                <i class="fas fa-lock ml-1"></i> האתר מאובטח בתקן PCI-DSS
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-golan-dark text-gray-400 py-8 text-center border-t border-gray-700">
+        <p class="mb-2">© כל הזכויות שמורות למכינת קשת יהודה | קמפיין הגיוס של אלון ואן גלדר</p>
+        <p class="text-sm">נבנה באהבה למען עתיד ישראל</p>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] md:hidden z-50 flex justify-between items-center border-t border-gray-200">
+        <div class="text-sm">
+            <p class="font-bold text-golan-dark">היעד: 10,000 ₪</p>
+            <p class="text-xs text-gray-500">עזרו לאלון להגיע ליעד</p>
+        </div>
+        <a href="https://charidy.com/KeshetYehuda/88544" target="_blank" class="bg-golan-earth text-golan-dark font-bold py-2 px-6 rounded-full text-sm shadow-md">
+            לתרומה
+        </a>
+    </div>
+
+    <script>
+        // Simple Scroll Reveal Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-reveal').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
